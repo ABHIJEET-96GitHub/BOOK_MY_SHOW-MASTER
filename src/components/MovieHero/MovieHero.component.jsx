@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import MovieInfo from './MovieInfo.component';
+import Films from '../Films/Films';
 
 //Context
 import { MovieContext } from '../../Context/movie.context';
@@ -63,8 +64,12 @@ const MovieHero = () => {
               />
              </div>
           </div>
+          <div>
+            <Films />
+          </div>
         </>
     )
+
 }
 
 export default MovieHero;

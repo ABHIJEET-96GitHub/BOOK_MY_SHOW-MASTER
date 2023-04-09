@@ -5,9 +5,11 @@ import React, {useState, useEffect} from "react";
 import EntertainmentCardSlider from "../components/Entertainment/Entertainmentcard.components";
 import Poster from "../components/Poster/poster.components";
 import PosterSlider from "../components/PosterSlider.components.jsx/posterslider.components";
+import Films from "../components/Films/Films";
 
 //Config
 import TempPosters from "../config/TempPosters.config";
+import { NavBar } from "../components/Navbar/NavBar";
 
 const HomePage  = () => {
 
@@ -44,12 +46,14 @@ const HomePage  = () => {
 
     return (
       <>
+        <NavBar></NavBar>
         <div className="flex flex-col gap-4">
           <div className="container mx-auto px-1 lg:px-10">
             <h1 className="text-2xl md:text-3xl font-bold text-gray-800 my-3">
               The best of Entertainment
             </h1>  
             <EntertainmentCardSlider />
+            <Films />
           </div>
           <div className="bg-bms-800 py-10"> 
             <div className="container mx-auto px-2 lg:px-4 flex flex-col gap-3">

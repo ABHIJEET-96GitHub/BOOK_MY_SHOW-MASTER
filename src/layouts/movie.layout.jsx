@@ -3,7 +3,7 @@ import React, { useEffect, useContext } from 'react'
 import { useParams } from 'react-router-dom';
 
 //Components
-import MovieNavbar from '../components/Navbar/movie.Navbar.component';
+import { NavBar } from '../components/Navbar/NavBar';
 
 //Context
 import { MovieContext } from '../Context/movie.context'; 
@@ -22,7 +22,7 @@ import { MovieContext } from '../Context/movie.context';
 
     return ( 
         <>
-          <MovieNavbar />
+          {/* <NavBar /> */}
           {props.children}
         </>
         );

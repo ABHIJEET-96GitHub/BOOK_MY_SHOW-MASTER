@@ -8,9 +8,10 @@ import Slider from "react-slick";
 import MovieHero from "../components/MovieHero/MovieHero.component";
 import Cast from "../components/Cast/Cast.components";
 import PosterSlider from "../components/PosterSlider.components.jsx/posterslider.components";
+import Films from "../components/Films/Films";
 
 //Config
-import TempPosters from "../config/TempPosters.config";
+// import TempPosters from "../config/TempPosters.config";
 
 // Context
 import { MovieContext } from "../Context/movie.context";
@@ -116,7 +117,6 @@ const Movie = () => {
 
     return (
         <>
-          <MovieHero /> 
           <div className="my-12 container px-4 lg:ml-20 lg:w-2/3">
              <div className="flex flex-col item-start gap-3">
               <h2 className="text-gray-800 font-bold text-2xl">About the movie</h2>
